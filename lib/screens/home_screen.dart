@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
               vertical: 30,
             ),
             sliver: SliverToBoxAdapter(
-              child: MovieSlider(),
+              child: MovieSlideShow(),
             ),
           ),
           SliverPadding(

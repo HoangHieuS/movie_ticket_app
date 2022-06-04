@@ -6,6 +6,7 @@ class DarkTheme {
   static const blueIllustration = Color(0xFF2C4BA1);
   static const darkBlueIllustration = Color(0xFF1E3577);
   static const white = Color(0xFFFFFFFF);
+  static const white70 = Color(0xB3FFFFFF);
   static const grey = Color(0xFFABADBD);
   static const greyBackground = Color(0xFF42476A);
   static const darkGrey = Color(0xFF42476A);
@@ -23,6 +24,6 @@ class GradientPalette {
   static const blue2 = Color(0xFF3D54F8);
   static const lightBlue1 = Color(0xFF449EFF);
   static final lightBlue2 = const Color(0xFF1DC7F7).withOpacity(0.94);
-  static final black1= const Color(0xFF111D42).withOpacity(0);
+  static final black1 = const Color(0xFF111D42).withOpacity(0);
   static const black2 = Color(0xFF111D42);
 }

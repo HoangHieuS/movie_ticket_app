@@ -5,8 +5,8 @@ import 'package:movie_ticket_app_ui/screens/screens.dart';
 import 'package:movie_ticket_app_ui/utils/utils.dart';
 import 'package:movie_ticket_app_ui/widgets/widgets.dart';
 
-class MovieSlider extends StatelessWidget {
-  const MovieSlider({Key? key}) : super(key: key);
+class MovieSlideShow extends StatelessWidget {
+  const MovieSlideShow({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -58,36 +58,10 @@ class MovieSlider extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: [
-                                Container(
-                                  width: size.width,
-                                  margin:
-                                      const EdgeInsets.only(bottom: 8, left: 8),
-                                  child: Text(
-                                    e.title,
-                                    style: TxtStyle.heading2,
-                                  ),
-                                ),
-                                Container(
-                                  margin: const EdgeInsets.only(
-                                      left: 8, bottom: 15),
-                                  child: Row(
-                                    children: const [
-                                      _StarIcon(icon: Icons.star),
-                                      _StarIcon(icon: Icons.star),
-                                      _StarIcon(icon: Icons.star),
-                                      _StarIcon(icon: Icons.star),
-                                      _StarIcon(icon: Icons.star_half),
-                                      Text(
-                                        '(4.7)',
-                                        style: TxtStyle.heading4,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
+                            child: MovieInfo(
+                              title: e.title,
+                              style: TxtStyle.heading2,
+                              isSlideShow: true,
                             ),
                           ),
                         ],
@@ -103,26 +77,6 @@ class MovieSlider extends StatelessWidget {
           ),
         ),
       ],
-    );
-  }
-}
-
-class _StarIcon extends StatelessWidget {
-  final IconData icon;
-  const _StarIcon({
-    Key? key,
-    required this.icon,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(right: 4),
-      child: Icon(
-        icon,
-        color: DarkTheme.yellow,
-        size: 14,
-      ),
     );
   }
 }

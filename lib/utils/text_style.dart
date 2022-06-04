@@ -3,7 +3,8 @@ import 'utils.dart';
 
 class TxtStyle {
   static const heading1 =
-  TextStyle(fontWeight: FontWeight.w400, fontSize: 30, height: 1.2);
+      TextStyle(fontWeight: FontWeight.w400, fontSize: 30, height: 1.2);
+
   static const heading1SemiBold = TextStyle(
     fontWeight: FontWeight.w400,
     fontSize: 30,
@@ -15,14 +16,15 @@ class TxtStyle {
   );
 
   static const heading2 = TextStyle(
-      fontWeight: FontWeight.w400,
-      fontSize: 24,
+      fontFamily: 'montserrat',
+      fontWeight: FontWeight.w500,
+      fontSize: 22,
       height: 1.2,
       decoration: TextDecoration.none,
       color: DarkTheme.white);
 
   static const heading3 =
-  TextStyle(fontWeight: FontWeight.w400, fontSize: 20, height: 1.2);
+      TextStyle(fontWeight: FontWeight.w400, fontSize: 20, height: 1.2);
 
   static const heading3Medium = TextStyle(
       fontWeight: FontWeight.w300,
@@ -39,26 +41,56 @@ class TxtStyle {
       decoration: TextDecoration.none);
 
   static const heading4 = TextStyle(
+      fontFamily: 'montserrat',
       fontWeight: FontWeight.w400,
       fontSize: 16,
-      height: 1.2,
+      height: 1.6,
       decoration: TextDecoration.none,
       color: DarkTheme.white);
 
   static const heading4Light = TextStyle(
-      fontWeight: FontWeight.w200,
-      fontSize: 16,
-      height: 1.2,
-      color: DarkTheme.white,
-      decoration: TextDecoration.none);
+    fontFamily: 'montserrat',
+    fontWeight: FontWeight.w400,
+    fontSize: 14,
+    height: 1.2,
+    color: DarkTheme.white,
+    decoration: TextDecoration.none,
+  );
+
+  static const subText = TextStyle(
+    fontFamily: 'montserrat',
+    fontWeight: FontWeight.w400,
+    fontSize: 14,
+    height: 1.2,
+    color: DarkTheme.white70,
+    decoration: TextDecoration.none,
+  );
+
+  static const headerText = TextStyle(
+    fontFamily: 'montserrat',
+    fontWeight: FontWeight.w600,
+    fontSize: 20,
+    height: 1.2,
+    color: DarkTheme.white,
+    decoration: TextDecoration.none,
+  );
+
+  static const headerTextGrey = TextStyle(
+    fontFamily: 'montserrat',
+    fontWeight: FontWeight.w400,
+    fontSize: 20,
+    height: 1.2,
+    color: DarkTheme.white70,
+    decoration: TextDecoration.none,
+  );
 }
 
 class GradientText extends StatelessWidget {
   const GradientText(
-      this.text, {
-        Key? key,
-        @required this.gradient,
-      }) : super(key: key);
+    this.text, {
+    Key? key,
+    @required this.gradient,
+  }) : super(key: key);
 
   final String text;
   final Gradient? gradient;
