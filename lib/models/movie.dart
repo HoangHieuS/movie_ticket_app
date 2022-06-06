@@ -26,8 +26,9 @@ final List<String> genres = [
   'Action',
   'Drama',
   'Honor',
-  'Romance',
-  'Fantasy'
+  'Crime',
+  'War',
+  'Comedy',
 ];
 
 final List<Movie> movies = [
@@ -62,40 +63,41 @@ final List<Movie> movies = [
       trailers: []),
 ];
 
-
-final List<String> days = ['SAT', 'SUN', 'MON', 'TUE'];
-final List<String> times = ['12:20', '14:30', '16:40', '19:00'];
+final List<String> days = ['SAT', 'SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI'];
+final List<String> times = ['12:20', '14:30', '16:40', '17:50', '19:00'];
 
 final List<TicketStates> dateStates = [
   TicketStates.idle,
-  TicketStates.active,
+  TicketStates.idle,
   TicketStates.busy,
-  TicketStates.idle
+  TicketStates.idle,
+  TicketStates.idle,
+  TicketStates.idle,
+  TicketStates.idle,
 ];
 final List<TicketStates> timeStates_1 = [
   TicketStates.idle,
   TicketStates.idle,
   TicketStates.busy,
+  TicketStates.idle,
   TicketStates.idle
 ];
 final List<TicketStates> timeStates_2 = [
   TicketStates.idle,
   TicketStates.busy,
   TicketStates.active,
+  TicketStates.idle,
   TicketStates.idle
 ];
 final List<TicketStates> timeStates_3 = [
   TicketStates.idle,
   TicketStates.busy,
   TicketStates.idle,
-  TicketStates.idle
-];
-final List<TicketStates> timeStates_4 = [
-  TicketStates.idle,
-  TicketStates.busy,
   TicketStates.idle,
   TicketStates.idle
 ];
+
+
 
 final List<String> seatRow = ['A', 'B', 'C', 'D', 'E'];
 final List<String> seatNumber = ['1', '2', '3', '4', '5', '6'];

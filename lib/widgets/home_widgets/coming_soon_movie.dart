@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_ticket_app_ui/models/models.dart';
+import 'package:movie_ticket_app_ui/screens/screens.dart';
 import 'package:movie_ticket_app_ui/widgets/widgets.dart';
 
 class ComingSoonMovie extends StatelessWidget {
@@ -18,9 +19,19 @@ class ComingSoonMovie extends StatelessWidget {
                 (e) => Builder(
                   builder: (context) {
                     return Expanded(
-                      child: Container(
-                        margin: const EdgeInsets.symmetric(horizontal: 4),
-                        child: Image.asset(e.posterImg),
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const MovieDetail(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          margin: const EdgeInsets.symmetric(horizontal: 4),
+                          child: Image.asset(e.posterImg),
+                        ),
                       ),
                     );
                   },

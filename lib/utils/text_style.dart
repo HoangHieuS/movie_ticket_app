@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'utils.dart';
 
 class TxtStyle {
-  static const heading1 =
-      TextStyle(fontWeight: FontWeight.w400, fontSize: 30, height: 1.2);
+  static const heading1 = TextStyle(
+      fontFamily: 'montserrat',
+      fontWeight: FontWeight.w600,
+      fontSize: 30,
+      height: 1.2);
 
   static const heading1SemiBold = TextStyle(
     fontWeight: FontWeight.w400,
@@ -15,6 +18,15 @@ class TxtStyle {
     height: 1.2,
   );
 
+  static const heading1Half = TextStyle(
+    fontFamily: 'montserrat',
+    fontWeight: FontWeight.w500,
+    fontSize: 24,
+    height: 1.2,
+    decoration: TextDecoration.none,
+    color: DarkTheme.white,
+  );
+
   static const heading2 = TextStyle(
       fontFamily: 'montserrat',
       fontWeight: FontWeight.w500,
@@ -23,8 +35,11 @@ class TxtStyle {
       decoration: TextDecoration.none,
       color: DarkTheme.white);
 
-  static const heading3 =
-      TextStyle(fontWeight: FontWeight.w400, fontSize: 20, height: 1.2);
+  static const heading3 = TextStyle(
+      fontFamily: 'montserrat',
+      fontWeight: FontWeight.w400,
+      fontSize: 20,
+      height: 1.2);
 
   static const heading3Medium = TextStyle(
       fontWeight: FontWeight.w300,
@@ -81,6 +96,15 @@ class TxtStyle {
     fontSize: 20,
     height: 1.2,
     color: DarkTheme.white70,
+    decoration: TextDecoration.none,
+  );
+
+  static TextStyle hintText = TextStyle(
+    fontFamily: 'montserrat',
+    fontWeight: FontWeight.w500,
+    fontSize: 20,
+    height: 1.2,
+    color: DarkTheme.white80,
     decoration: TextDecoration.none,
   );
 }

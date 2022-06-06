@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:movie_ticket_app_ui/constants/constants.dart';
+import 'package:movie_ticket_app_ui/screens/screens.dart';
 import 'package:movie_ticket_app_ui/utils/utils.dart';
 import 'package:movie_ticket_app_ui/widgets/widgets.dart';
 
@@ -14,7 +15,7 @@ class MovieDetail extends StatefulWidget {
 class _MovieDetailState extends State<MovieDetail>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
-  int _currentIndex = 0;
+  final int _currentIndex = 0;
 
   @override
   void initState() {
@@ -39,7 +40,7 @@ class _MovieDetailState extends State<MovieDetail>
     return Scaffold(
       body: SingleChildScrollView(
         child: SizedBox(
-          height: size.height * 2,
+          height: size.height * 1.6,
           child: Column(
             children: [
               Stack(
@@ -85,7 +86,14 @@ class _MovieDetailState extends State<MovieDetail>
                 ],
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const SelecteCinema(),
+                          ),
+                        );
+                },
                 style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.zero,
                     shape: RoundedRectangleBorder(
@@ -104,7 +112,7 @@ class _MovieDetailState extends State<MovieDetail>
                     height: 60,
                     alignment: Alignment.center,
                     child: const Text(
-                      'Back Now',
+                      'Book Now',
                       style: TextStyle(fontSize: 20),
                     ),
                   ),
