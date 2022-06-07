@@ -88,11 +88,11 @@ class _MovieDetailState extends State<MovieDetail>
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const SelecteCinema(),
-                          ),
-                        );
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const SelecteCinema(),
+                    ),
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.zero,

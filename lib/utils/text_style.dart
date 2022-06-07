@@ -27,6 +27,15 @@ class TxtStyle {
     color: DarkTheme.white,
   );
 
+  static const heading1HalfBold = TextStyle(
+    fontFamily: 'montserrat',
+    fontWeight: FontWeight.w600,
+    fontSize: 24,
+    height: 1.2,
+    decoration: TextDecoration.none,
+    color: DarkTheme.white,
+  );
+
   static const heading2 = TextStyle(
       fontFamily: 'montserrat',
       fontWeight: FontWeight.w500,
@@ -49,7 +58,8 @@ class TxtStyle {
       color: DarkTheme.white);
 
   static const heading3Light = TextStyle(
-      fontWeight: FontWeight.w200,
+      fontFamily: 'montserrat',
+      fontWeight: FontWeight.w300,
       fontSize: 20,
       height: 1.2,
       color: DarkTheme.white,
@@ -59,7 +69,7 @@ class TxtStyle {
       fontFamily: 'montserrat',
       fontWeight: FontWeight.w400,
       fontSize: 16,
-      height: 1.6,
+      height: 1.2,
       decoration: TextDecoration.none,
       color: DarkTheme.white);
 

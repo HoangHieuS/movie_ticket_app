@@ -68,7 +68,7 @@ final List<String> times = ['12:20', '14:30', '16:40', '17:50', '19:00'];
 
 final List<TicketStates> dateStates = [
   TicketStates.idle,
-  TicketStates.idle,
+  TicketStates.active,
   TicketStates.busy,
   TicketStates.idle,
   TicketStates.idle,
@@ -99,5 +99,15 @@ final List<TicketStates> timeStates_3 = [
 
 
 
-final List<String> seatRow = ['A', 'B', 'C', 'D', 'E'];
-final List<String> seatNumber = ['1', '2', '3', '4', '5', '6'];
+final List<String> seatRow = ['A', 'B', 'C', 'D'];
+final List<String> seatRow2 = ['E', 'F', 'G', 'H', 'I', 'J'];
+
+
+final List<String> seatNumberC1 = ['1', '2', '3', '4', '5', '6'];
+final List<String> seatNumberC1Sub = ['1', '2', '3', '4'];
+final List<String> seatNumberC2 = ['7', '8', '9', '10', '11', '12'];
+final List<String> seatNumberC2Sub = ['5', '6', '7', '8', '9', '10'];
+final List<String> seatNumberC3 = ['13', '14', '15', '16', '17', '18'];
+final List<String> seatNumberC3Sub = ['11', '12', '13', '14'];
+
+
