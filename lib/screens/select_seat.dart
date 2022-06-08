@@ -284,25 +284,23 @@ class _ToggleButtonState extends State<ToggleButton> {
     return SizedBox(
       height: 52,
       width: 52,
-      child: Expanded(
-        child: GestureDetector(
-          onTap: () {
-            setState(() {
-              _ticketStates = _ticketStates == TicketStates.idle
-                  ? TicketStates.active
-                  : TicketStates.idle;
-            });
-          },
-          child: Container(
-            margin: const EdgeInsets.only(bottom: 8, left: 8),
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: _ticketStates == TicketStates.idle
-                    ? DarkTheme.darkBackground
-                    : DarkTheme.blueMain),
-            child: widget.child,
-          ),
+      child: GestureDetector(
+        onTap: () {
+          setState(() {
+            _ticketStates = _ticketStates == TicketStates.idle
+                ? TicketStates.active
+                : TicketStates.idle;
+          });
+        },
+        child: Container(
+          margin: const EdgeInsets.only(bottom: 8, left: 8),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: _ticketStates == TicketStates.idle
+                  ? DarkTheme.darkBackground
+                  : DarkTheme.blueMain),
+          child: widget.child,
         ),
       ),
     );
