@@ -88,7 +88,7 @@ class _PromoCode extends StatelessWidget {
                   children: [
                     const TextSpan(
                       text: 'OFF ',
-                      style: TxtStyle.heading3Medium,
+                      style: TxtStyle.heading3,
                     ),
                     TextSpan(
                       text: '$discount%',

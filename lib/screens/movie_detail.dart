@@ -85,39 +85,20 @@ class _MovieDetailState extends State<MovieDetail>
                   ),
                 ],
               ),
-              ElevatedButton(
-                onPressed: () {
+              CustomElevatedButton(
+                onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const SelecteCinema(),
+                      builder: (context) => const SelectCinema(),
                     ),
                   );
                 },
-                style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.zero,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20))),
-                child: Ink(
-                  decoration: BoxDecoration(
-                      gradient: const LinearGradient(
-                        colors: [
-                          GradientPalette.blue1,
-                          GradientPalette.blue2,
-                        ],
-                      ),
-                      borderRadius: BorderRadius.circular(20)),
-                  child: Container(
-                    width: 320,
-                    height: 60,
-                    alignment: Alignment.center,
-                    child: const Text(
-                      'Book Now',
-                      style: TextStyle(fontSize: 20),
-                    ),
-                  ),
-                ),
+                text: 'Book Now',
+                width: 320,
+                height: 60,
               ),
+              
             ],
           ),
         ),

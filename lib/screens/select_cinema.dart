@@ -6,8 +6,8 @@ import 'package:movie_ticket_app_ui/screens/screens.dart';
 import 'package:movie_ticket_app_ui/utils/utils.dart';
 import 'package:movie_ticket_app_ui/widgets/select_cinema_widgets/select_cinema_widget.dart';
 
-class SelecteCinema extends StatelessWidget {
-  const SelecteCinema({Key? key}) : super(key: key);
+class SelectCinema extends StatelessWidget {
+  const SelectCinema({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

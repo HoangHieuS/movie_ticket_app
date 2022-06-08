@@ -45,13 +45,16 @@ class TxtStyle {
       color: DarkTheme.white);
 
   static const heading3 = TextStyle(
-      fontFamily: 'montserrat',
-      fontWeight: FontWeight.w400,
-      fontSize: 20,
-      height: 1.2);
+    fontFamily: 'montserrat',
+    fontWeight: FontWeight.w400,
+    fontSize: 20,
+    height: 1.2,
+    color: DarkTheme.white,
+  );
 
-  static const heading3Medium = TextStyle(
-      fontWeight: FontWeight.w300,
+  static const heading3Bold = TextStyle(
+      fontFamily: 'montserrat',
+      fontWeight: FontWeight.w600,
       fontSize: 20,
       height: 1.2,
       decoration: TextDecoration.none,
@@ -109,9 +112,27 @@ class TxtStyle {
     decoration: TextDecoration.none,
   );
 
+  static const headerTextWhite = TextStyle(
+    fontFamily: 'montserrat',
+    fontWeight: FontWeight.w500,
+    fontSize: 20,
+    height: 1.2,
+    color: DarkTheme.white,
+    decoration: TextDecoration.none,
+  );
+
   static TextStyle hintText = TextStyle(
     fontFamily: 'montserrat',
     fontWeight: FontWeight.w500,
+    fontSize: 20,
+    height: 1.2,
+    color: DarkTheme.white80,
+    decoration: TextDecoration.none,
+  );
+
+  static TextStyle headingWhite80 = TextStyle(
+    fontFamily: 'montserrat',
+    fontWeight: FontWeight.w400,
     fontSize: 20,
     height: 1.2,
     color: DarkTheme.white80,

@@ -37,7 +37,7 @@ class SearchBar extends StatelessWidget {
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: 'Search movie',
-                        hintStyle: TxtStyle.heading3Medium,
+                        hintStyle: TxtStyle.heading3,
                       ),
                     ),
                   ),

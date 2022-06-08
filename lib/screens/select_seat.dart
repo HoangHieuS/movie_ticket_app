@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:movie_ticket_app_ui/constants/constants.dart';
 import 'package:movie_ticket_app_ui/models/models.dart';
+import 'package:movie_ticket_app_ui/screens/screens.dart';
 import 'package:movie_ticket_app_ui/utils/utils.dart';
+import 'package:movie_ticket_app_ui/widgets/widgets.dart';
 
 class SelectSeat extends StatefulWidget {
   const SelectSeat({Key? key}) : super(key: key);
@@ -121,30 +123,23 @@ class _SelectSeatState extends State<SelectSeat> {
                         ),
                         Text(
                           '150.000 VND',
-                          style: TxtStyle.heading3Medium,
+                          style: TxtStyle.heading3Bold,
                         ),
                       ],
                     ),
-                    GestureDetector(
+                    CustomElevatedButton(
+                      height: size.height / 16,
+                      width: size.width / 3,
                       onTap: () {
                         Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const Scaffold()));
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const CheckoutScreen(),
+                          ),
+                        );
                       },
-                      child: Container(
-                        height: size.height / 16,
-                        width: size.width / 3,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                            color: DarkTheme.blueMain,
-                            borderRadius: BorderRadius.circular(16)),
-                        child: const Text(
-                          'Book Ticket',
-                          style: TxtStyle.heading3Medium,
-                        ),
-                      ),
-                    )
+                      text: 'Book Ticket',
+                    ),
                   ],
                 ),
               ),
@@ -187,7 +182,7 @@ class _SeatColumn extends StatelessWidget {
                               return ToggleButton(
                                 child: Text(
                                   row + number,
-                                  style: TxtStyle.heading3Medium,
+                                  style: TxtStyle.heading3,
                                 ),
                               );
                             },
@@ -213,7 +208,7 @@ class _SeatColumn extends StatelessWidget {
                               return ToggleButton(
                                 child: Text(
                                   row + number,
-                                  style: TxtStyle.heading3Medium,
+                                  style: TxtStyle.heading3,
                                 ),
                               );
                             },

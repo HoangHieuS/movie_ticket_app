@@ -49,7 +49,7 @@ class _CategoryBarState extends State<CategoryBar> {
                       ),
                 child: Text(
                   genres[index],
-                  style: TxtStyle.heading3Medium,
+                  style: TxtStyle.heading3,
                 ),
               ),
             ),

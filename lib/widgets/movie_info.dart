@@ -18,7 +18,8 @@ class MovieInfo extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     return Column(
-      mainAxisAlignment: MainAxisAlignment.end,
+      mainAxisAlignment:
+          isSlideShow ? MainAxisAlignment.end : MainAxisAlignment.start,
       children: [
         Container(
           padding: EdgeInsets.only(
@@ -55,7 +56,7 @@ class MovieInfo extends StatelessWidget {
         isSlideShow == true
             ? const SizedBox.shrink()
             : Container(
-                padding: const EdgeInsets.only(left: 14, bottom: 4),
+                padding: const EdgeInsets.only(left: 14, bottom: 6),
                 width: size.width,
                 child: const Text(
                   'Action & adventure, Comedy',

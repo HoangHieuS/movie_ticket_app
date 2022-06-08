@@ -2,18 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:movie_ticket_app_ui/utils/utils.dart';
 
 class CustomElevatedButton extends StatelessWidget {
-  final VoidCallback? onTap;
+  final Function() onTap;
   final String text;
   final double width;
   final double height;
-  final double size;
 
   const CustomElevatedButton({
     Key? key,
-    this.onTap,
+    required this.onTap,
     required this.text,
     required this.width,
-    required this.height, required this.size,
+    required this.height,
   }) : super(key: key);
 
   @override
@@ -39,7 +38,7 @@ class CustomElevatedButton extends StatelessWidget {
           alignment: Alignment.center,
           child: Text(
             text,
-            style: TextStyle(fontSize: size, color: DarkTheme.white,),
+            style: TxtStyle.heading3Bold,
           ),
         ),
       ),
